@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TapCard – Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0f172a;
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.5px; }
+    header p  { margin-top: 8px; color: #94a3b8; font-size: 0.95rem; }
+
+    main {
+      max-width: 740px;
+      margin: 48px auto;
+      padding: 0 24px 64px;
+    }
+
+    section { margin-bottom: 40px; }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #e2e8f0;
+    }
+
+    p  { margin-bottom: 12px; color: #374151; }
+    ul { padding-left: 20px; margin-bottom: 12px; color: #374151; }
+    li { margin-bottom: 6px; }
+
+    .highlight {
+      background: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      border-radius: 4px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      font-size: 0.93rem;
+      color: #1e40af;
+    }
+
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #9ca3af;
+      border-top: 1px solid #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>TapCard</h1>
+  <p>Privacy Policy &nbsp;·&nbsp; Last updated: May 9, 2025</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Overview</h2>
+    <p>
+      TapCard is a business card sharing app that lets you exchange contact information
+      via NFC tap, QR code, and Bluetooth/Wi-Fi (Nearby Connections). This policy explains
+      what data the app accesses, how it is used, and what leaves your device.
+    </p>
+    <div class="highlight">
+      TapCard does not collect analytics, serve ads, or share your data with any advertising
+      network. There is no account registration required.
+    </div>
+  </section>
+
+  <section>
+    <h2>Data Stored on Your Device</h2>
+    <p>All business card data is stored locally on your device in a private database:</p>
+    <ul>
+      <li>Your own cards: name, title, company, phone numbers, email addresses, website, address, notes, and optional profile photo</li>
+      <li>Cards you receive via NFC, QR code, or Nearby Connections</li>
+      <li>Tags you assign to cards</li>
+      <li>A share history log (which card was shared, when, and by which method)</li>
+    </ul>
+    <p>This data never leaves your device except as described in the sections below.</p>
+  </section>
+
+  <section>
+    <h2>Permissions Used</h2>
+    <ul>
+      <li>
+        <strong>Camera</strong> — used to scan QR codes and photograph physical business cards
+        for OCR extraction. Camera images are processed on-device and are not stored or uploaded.
+      </li>
+      <li>
+        <strong>NFC</strong> — used to send and receive business cards via NFC tap.
+      </li>
+      <li>
+        <strong>Bluetooth &amp; Wi-Fi</strong> — used exclusively for Nearby Connections
+        (peer-to-peer card sharing). No data is routed through any external server.
+      </li>
+      <li>
+        <strong>Location (coarse &amp; fine)</strong> — required by Android for Wi-Fi and
+        Bluetooth scanning used by Nearby Connections. The app does not record, store, or
+        transmit your location.
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Google Gemini API</h2>
+    <p>
+      When you scan a physical business card, the app uses your device camera and on-device
+      text recognition (ML Kit) to extract the visible text. That extracted text is then sent
+      to <strong>Google's Gemini API</strong> to identify and structure the contact fields
+      (name, company, phone, email, etc.).
+    </p>
+    <p>
+      Only the raw OCR text (no images, no device identifiers) is transmitted. This data is
+      processed by Google under
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
+        Google's Privacy Policy
+      </a>
+      and their
+      <a href="https://ai.google.dev/gemini-api/terms" target="_blank" rel="noopener">
+        Gemini API Terms of Service
+      </a>.
+    </p>
+    <p>
+      The extracted result is stored locally and used only to pre-fill the card editing form.
+      You can review and edit it before saving.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data Sharing</h2>
+    <p>
+      The only data that leaves your device is:
+    </p>
+    <ul>
+      <li>OCR text sent to Google Gemini when you scan a physical card (described above)</li>
+      <li>Card details you explicitly share with another person via NFC, QR, or Nearby</li>
+    </ul>
+    <p>We do not sell, rent, or trade any user data to third parties.</p>
+  </section>
+
+  <section>
+    <h2>Advertising &amp; Tracking</h2>
+    <p>
+      TapCard contains no advertising SDKs and does not access your device's Advertising ID.
+      There is no analytics, crash reporting, or behavioural tracking of any kind.
+    </p>
+  </section>
+
+  <section>
+    <h2>Data Retention &amp; Deletion</h2>
+    <p>
+      All data is stored locally on your device. You can delete individual cards and tags at
+      any time from within the app. Uninstalling the app removes all locally stored data.
+    </p>
+  </section>
+
+  <section>
+    <h2>Children's Privacy</h2>
+    <p>
+      TapCard is not directed at children under the age of 13 and does not knowingly collect
+      information from them.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to This Policy</h2>
+    <p>
+      If we make material changes to this policy, we will update the date at the top of this
+      page. Continued use of the app after changes constitutes acceptance of the updated policy.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>
+      If you have questions about this privacy policy, contact us at
+      <a href="mailto:agent02.ai@analyticalboost.com">agent02.ai@analyticalboost.com</a>.
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 TapCard. All rights reserved.
+</footer>
+
+</body>
+</html>
